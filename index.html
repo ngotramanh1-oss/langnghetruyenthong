@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Di sản Đà Nẵng - Khám phá làng nghề truyền thống</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Di sản Đà Nẵng</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <a href="#home">Trang chủ</a>
+                <a href="#villages">Làng nghề</a>
+                <a href="#locations">Điểm đến</a>
+                <a href="#about">Cẩm nang</a>
+                <a href="https://forms.gle/9ZfkGuhiUGc3cF2U9" target="_blank" rel="noopener noreferrer">Đăng ký workshop</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+                <span class="menu-icon" id="menuIcon">☰</span>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="navMobile">
+            <a href="#home" onclick="closeMenu()">Trang chủ</a>
+            <a href="#villages" onclick="closeMenu()">Làng nghề</a>
+            <a href="#locations" onclick="closeMenu()">Điểm đến</a>
+            <a href="#about" onclick="closeMenu()">Cẩm nang</a>
+            <a href="https://forms.gle/9ZfkGuhiUGc3cF2U9" onclick="closeMenu()" target="_blank" rel="noopener noreferrer">Đăng ký workshop</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-image">
+            <img src="https://phunugioi.com/wp-content/uploads/2020/11/hinh-anh-thanh-pho-da-nang.jpg" alt="Da Nang Beach Sunset">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title"> ĐÀ NẴNG</h1>
+            <p class="hero-subtitle">"Di sản không phải là những gì đã mất đi, mà là những gì chúng ta đang cùng nhau gìn giữ cho mai sau"</p>
+            <div class="hero-buttons">
+                <a href="#villages" class="btn btn-primary">Chạm vào di sản</a>
+                <a href="#locations" class="btn btn-secondary">Điểm đến di sản</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craft Villages Section -->
+    <section id="villages" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Làng Nghề Truyền Thống</h2>
+                <p>Khám phá những làng nghề truyền thống của Đà Nẵng, nơi tinh hoa thủ công được gìn giữ và phát huy qua từng thế hệ.</p>
+            </div>
+
+            <div class="villages-grid">
+                <!-- Village 1 -->
+                <div class="village-card">
+                    <div class="village-image">
+                        <img src="https://images.unsplash.com/photo-1760894192884-37a7037200ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxWaWV0bmFtZXNlJTIwcG90dGVyeSUyMGNyYWZ0JTIwdHJhZGl0aW9uYWx8ZW58MXx8fHwxNzcwMzgzMDIzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Làng gốm Thanh Hà">
+                        <div class="village-badge">Gốm Thanh Hà</div>
+                    </div>
+                    <div class="village-content">
+                        <h3>Làng gốm Thanh Hà</h3>
+                        <p>Làng gốm Thanh Hà là một làng nghề truyền thống lâu đời bên dòng sông Thu Bồn tại Hội An, nổi tiếng với các sản phẩm gốm đất nung mộc mạc được chế tác hoàn toàn bằng tay và kỹ thuật nung truyền thống đặc sắc.</p>
+                        <div class="village-info">
+                            <div class="info-item">
+                                <span class="icon">📍</span>
+                                <span>Thành phố Đà Nẵng</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="icon">🕐</span>
+                                <span>8:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="village-buttons">
+                            <a href="https://sites.google.com/view/lang-gom-thanh-ha/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                            <a href="https://maps.google.com/maps?q=15.8733,108.3385" target="_blank" class="btn btn-village">Vị trí</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Village 2 -->
+                <div class="village-card">
+                    <div class="village-image">
+                        <img src="https://images.unsplash.com/photo-1760939399262-d4d30d78a291?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxWaWV0bmFtZXNlJTIwd2VhdmluZyUyMHRyYWRpdGlvbmFsJTIwY3JhZnR8ZW58MXx8fHwxNzcwMzgzMDI0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Trà Quế Vegetable Village">
+                        <div class="village-badge">Chiếu Cẩm Nê</div>
+                    </div>
+                    <div class="village-content">
+                        <h3>Làng Chiếu Cẩm Nê</h3>
+                        <p>Làng Chiếu Cẩm Nê nổi tiếng với nông nghiệp hữu cơ và nghề dệt truyền thống. Làng bảo tồn nghệ thuật sản xuất vải tự nhiên, nơi bạn có thể tận mắt chứng kiến cách dệt vải truyền thống bằng các phương pháp cổ xưa.</p>
+                        <div class="village-info">
+                            <div class="info-item">
+                                <span class="icon">📍</span>
+                                <span>Thành phố Hội An</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="icon">🕐</span>
+                                <span>7:00 AM - 5:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="village-buttons">
+                            <a href="https://sites.google.com/view/lang-chieu-cam-ne/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                            <a href="https://www.google.com/maps?q=l%C3%A0ng+C%E1%BA%A9m+N%C3%AA,+H%C3%B2a+Ti%E1%BA%BFn,+H%C3%B2a+Vang,+%C4%90%C3%A0+N%E1%BA%B5ng&ftid=0x31421ba4fe154da3:0xa478d12b651bd8b5&entry=gps&shh=CAE&lucs=,94297699,94275415,94284475,94231188,94280568,47071704,94218641,94282134,94286869&g_ep=CAISEjI2LjA2LjIuODY0NDM1MTkzMBgAIMi8BypRLDk0Mjk3Njk5LDk0Mjc1NDE1LDk0Mjg0NDc1LDk0MjMxMTg4LDk0MjgwNTY4LDQ3MDcxNzA0LDk0MjE4NjQxLDk0MjgyMTM0LDk0Mjg2ODY5QgJWTg%3D%3D&skid=4541967d-cde2-4c1a-94c2-3941da481621&g_st=ic" target="_blank" class="btn btn-village">Vị trí</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Village 3 -->
+                <div class="village-card">
+                    <div class="village-image">
+                        <img src="https://statics.vntrip.vn/data-v2/data-guide/img_content/1462783591_lang-triem-tay-1.jpg" alt="La
+                    ">
+                        <div class="village-badge">Làng Triêm Tây</div>
+                    </div>
+                    <div class="village-content">
+                        <h3>Làng Triêm Tây</h3>
+                        <p>Tại đây, du khách có thể tham quan cảnh quan sông nước đặc trưng của vùng hạ nguồn sông Thu Bồn và tìm hiểu đời sống bản địa qua các nghề truyền thống như dệt chiếu, tráng bánh ướt hay làm mì Quảng. Sự hiền hậu, mến khách của người dân cùng nhịp sống chậm rãi là yếu tố cốt lõi thu hút khách du lịch.</p>
+                        <div class="village-info">
+                            <div class="info-item">
+                                <span class="icon">📍</span>
+                                <span>Xã Điện Phương, thị xã Điện Bàn, Đà Nẵng.</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="icon">🕐</span>
+                                <span>9:00 AM - 7:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="village-buttons">
+                            <a href="https://sites.google.com/view/langtriemtay/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                            <a href="https://maps.app.goo.gl/42ZVeu8x4gey14b3A?g_st=iz" target="_blank" class="btn btn-village">Vị trí</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Village 4 -->
+                <div class="village-card">
+                    <div class="village-image">
+                        <img src="https://cly.1cdn.vn/2024/01/27/anh-me-1.jpg" alt="Làng bánh khô mè">
+                        <div class="village-badge">Bánh khô mè</div>
+                    </div>
+                    <div class="village-content">
+                        <h3>Làng bánh khô mè</h3>
+                        <p>Làng bánh khô mè là một làng nghề truyền thống nổi tiếng với các sản phẩm làm từ mè như bánh khô, bánh nướng và các loại bánh truyền thống. Làng giữ gìn và phát huy các kỹ thuật thủ công truyền thống trong việc chế tác bánh.</p>
+                        <div class="village-info">
+                            <div class="info-item">
+                                <span class="icon">📍</span>
+                                <span>Làng Cẩm Lệ, quận Hải Châu, thành phố Đà Nẵng</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="icon">🕐</span>
+                                <span>8:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="village-buttons">
+                            <a href="https://sites.google.com/view/lang-banh-me-cam-le/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                            <a href="https://maps.app.goo.gl/e8USAfrdiZ8btB6S9" target="_blank" class="btn btn-village">Vị trí</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Villages (Hidden by default) -->
+                <div id="moreVillages" class="villages-grid hidden">
+                    <!-- Village 5 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://images.unsplash.com/photo-1540127376442-6c24d2837a6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxWaWV0bmFtZXNlJTIwc2lsayUyMHdlYXZpbmclMjB0cmFkaXRpb25hbHxlbnwxfHx8fDE3NzAzODU2MDR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Silk Weaving Village">
+                            <div class="village-badge">lụa</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng lụa Mã Châu</h3>
+                            <p>Làng lụa Mã Châu là một làng nghề truyền thống nổi tiếng với các sản phẩm lụa tinh xảo, được làm thủ công từ nguyên liệu tự nhiên và kỹ thuật truyền thống. Làng có lịch sử phát triển kéo dài hơn 300 năm.</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Thành phố Hội An</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>8:00 AM - 5:30 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/lang-det-ma-chau/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://maps.app.goo.gl/LVpNEEqi1pg13LRq5?g_st=iz" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 6 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://bazantravel.com/cdn/medias/uploads/53/53835-lang-lua-hoi-an-4.jpg" alt="Embroidery Village">
+                            <div class="village-badge">lụa</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng lụa Hội An</h3>
+                            <p>Làng lụa Hội An là một làng nghề truyền thống nổi tiếng với các sản phẩm lụa tinh xảo, được làm thủ công từ nguyên liệu tự nhiên và kỹ thuật truyền thống. </p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Thành phố Hội An</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>8:30 AM - 5:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/langluahoian/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://maps.app.goo.gl/cBrcA5tDDjpdjKPe9?g_st=iz" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 7 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQUmrAbXik3oQN2XycuzceadipRb9dImH3n1D96hwySCXTPOJ_sxnlbVSVvoWbg5qmHG8BegjfYL6cGAGe0AGFmAWcqNT6SBmR1cDv8k3PS7t_Ba6gNNWVsv-HhkQK1X04dutiYum470CBIMmdtoj6gimjFSsQDcLHHMIrA_kmpnleoXPhfAiW7EKOxtcvTWn9TQQ87JWQvQxV8fE9EEwMrAikZZovYyYY7=w1280" alt="Conical Hat Village">
+                            <div class="village-badge">Trầm hương quế</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng nghề dó trầm hương quế</h3>
+                            <p>Nghề trầm hương tại Quế Trung có lịch sử gắn liền với những chuyến hành trình "đi tìm trầm" đầy gian khổ của người dân xứ Quảng xưa kia. Từ hàng trăm năm trước, người dân Quế Trung đã nổi tiếng với nghề đi rừng tìm trầm kỳ - loại sản vật quý hiếm ẩn mình trong thân cây dó bầu già cỗi</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span> xã Quế Trung, huyện Nông Sơn, Đà Nẵng.</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>8:00 AM - 5:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/langnghedotramhuongque/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://maps.app.goo.gl/s8ek3jgnDdGSqHHQ8?g_st=iz" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 8 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://mia.vn/media/uploads/blog-du-lich/1-ngay-tro-lai-ngay-xua-tai-lang-moc-Kim-Bong-hon-tram-nam-lich-su-6-1620579760.jpg" alt="Wood Carving Village">
+                            <div class="village-badge">Điêu khắc gỗ</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng mộc Kim Bồng</h3>
+                            <p>Nổi tiếng với kỹ thuật chạm gỗ và thợ mộc xuất sắc. Các nghệ nhân tại đây tạo ra những món nội thất, tượng trưng và các yếu tố kiến trúc truyền thống tinh xảo.</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Đường Nông Thôn, thôn Trung Hà, xã Cẩm Kim, thành phố Hội An, tỉnh Quảng Nam</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>7:00 AM - 5:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/langmockimbong/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://maps.app.goo.gl/W67hoGnauhjX6h5f6?g_st=iz" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 9 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://dautuhoinhap.net/wp-content/uploads/2023/03/4-1-780x405.jpg" alt="Fishing Net Village">
+                            <div class="village-badge">Nước Mắm Nam Ô</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng nước mắm Nam Ô</h3>
+                            <p>Làng truyền thống làm nước mắm, nơi các nghệ nhân tạo ra những chiếc nước mắm thơm ngon và đậm đà bằng các kỹ thuật truyền thống. Đây là một trong những làng nghề nổi tiếng của vùng ven biển.</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Phường Hòa Hiệp Nam/Hòa Hiệp Bắc, Quận Liên Chiểu, TP. Đà Nẵng </span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>6:00 AM - 4:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/lang-nghe-nuoc-mam-nam-o/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://maps.app.goo.gl/8hYHCoCBUpR69XNUA" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 10 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://danangbest.com/upload_content/Lang-bich-hoa-1.webp" alt="Rice Paper Village">
+                            <div class="village-badge">bích họa</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng bích họa Tam Thanh</h3>
+                            <p>Làng bích họa Tam Thanh nổi tiếng với các sản phẩm bích họa tinh xảo.Các nghệ nhân tại đây tạo ra những tác phẩm nghệ thuật độc đáo, thể hiện nét đẹp văn hóa truyền thống của Việt Nam.</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Nằm ở thôn Hòa Trung, phường Quảng Phú, TP Đà Nẵng</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>5:00 AM - 2:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/lang-tam-thanh/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://maps.app.goo.gl/sz4LTvZaF3N3iqtp7?g_st=iz" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 11 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://nguoiduatin.mediacdn.vn/thumb_w/930/media/le-nham-than/2018/01/26/img1984.JPG" alt="Bronze Casting Village">
+                            <div class="village-badge">Làng rau</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng rau La Hường</h3>
+                            <p>Kỹ thuật trồng rau hữu cơ truyền thống tại làng La Hường. Làng nổi tiếng với các loại rau sạch, được trồng theo phương pháp truyền thống và thân thiện với môi trường.</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Phường Hòa Thọ Đông, quận Cẩm Lệ</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>7:00 AM - 5:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/lang-rau-la-huong/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://www.google.com/maps?q=l%C3%A0ng+rau+La+H%C6%B0%E1%BB%9Dng,+Ph%C6%B0%E1%BB%9Dng+H%E1%BB%93a+Th%E1%BB%85+Ä%90%C3%B4ng,+qu%E1%BA%A7n+C%E1%BA%A3m+L%E1%BB%87&ftid=0x31421c7c8f0c7b5f:0x8e2b6e4f2c5d7b5f&entry=gps&shh=CAE&lucs=,94297699,94275415,94284475,94231188,94280568,47071704,94218641,94282134,94286869&g_ep=CAISEjI2LjA2LjIuODY0NDM1MTkzMBgAIMi8BypRLDk0Mjk3Njk5LDk0Mjc1NDE1LDk0Mjg0NDc1LDk0MjMxMTg4LDk0MjgwNTY4LDQ3MDcxNzA0LDk0MjE4NjQxLDk0MjgyMTM0LDk0Mjg2ODY5QgJWTg%3D%3D&skid=4541967d-cde2-4c1a-94c2-3941da481621&g_st=ic" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 12 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://file.hstatic.net/200000887901/article/lang_nghe_dan_lat_f30418e9953b4afaa1f89d2b6fafdce4.jpg" alt="Incense Village">
+                            <div class="village-badge">Làng đan lát</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng nghề đan lát Yến Nê</h3>
+                            <p> Trong quá khứ, Yến Nê từng là một nghề dân dã phổ biến, gắn liền với cuộc sống nông nghiệp của người dân địa phương khi tre mọc khắp làng, trở thành nguyên liệu chính cho các sản phẩm đan lát như rổ, rá, mủng, sàng, nia…</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Xã Hòa Tiến, huyện Hoa Vang, thành phố Đà Nẵng</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>7:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/dan-lat-yen-ne/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://www.google.com/maps?q=15.9782640,108.1739318&entry=gps&lucs=,94284511,94231188,94280568,47071704,94266209,94218641,94282134,94286869&g_ep=CAISEjI1LjQzLjEuODIxNzQwMTA2MBgAIMi8BypILDk0Mjg0NTExLDk0MjMxMTg4LDk0MjgwNTY4LDQ3MDcxNzA0LDk0MjY2MjA5LDk0MjE4NjQxLDk0MjgyMTM0LDk0Mjg2ODY5QgJWTg%3D%3D&skid=9988d289-4bc9-46d8-9500-a6a170a83867&g_st=ipc" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 13 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://2trip.vn/wp-content/uploads/2022/12/lang-banh-trang-tuy-loan-6.jpg" alt="Lacquerware Village">
+                            <div class="village-badge">bánh tráng</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng bánh tráng Túy Loan</h3>
+                            <p>Thành phẩm bánh tráng tinh xảo được chế tác bằng các phương pháp truyền thống. </p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Thôn An Sơn, Xã Hòa Ninh, huyện Hòa Vang, Đà Nẵng</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>7:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/lang-banh-trang-tuy-loan/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://www.google.com/maps?q=l%C3%A0ng+b%C3%A1nh+tr%E1%BA%A3ng+T%C3%BAy+Loan,+Th%C3%B4n+An+S%C6%A1n,+X%C3%A3+H%E1%BB%93a+Ninh,+huy%E1%BB%87n+H%E1%BB%93a+Vang,+Th%C3%A0nh+ph%E1%BB%91+Da+N%E1%BA%B5ng&ftid=0x31421c7c8f0c7b5f:0x8e2b6e4f2c5d7b5f&entry=gps&shh=CAE&lucs=,94297699,94275415,94284475,94231188,94280568,47071704,94218641,94282134,94286869&g_ep=CAISEjI2LjA2LjIuODY0NDM1MTkzMBgAIMi8BypRLDk0Mjk3Njk5LDk0Mjc1NDE1LDk0Mjg0NDc1LDk0MjMxMTg4LDk0MjgwNTY4LDQ3MDcxNzA0LDk0MjE4NjQxLDk0MjgyMTM0LDk0Mjg2ODY5QgJWTg%3D%3D&skid=4541967d-cde2-4c1a-94c2-3941da481621&g_st=ic" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 14 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/12/13/1126957/Lang-Moc-Kim-Bong-5_.jpg" alt="Basket Weaving Village">
+                            <div class="village-badge">Làng mộc</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng mộc Khuê Trung</h3>
+                            <p>Nghề mộc ở đây từng là trung tâm sản xuất đồ gỗ lớn của vùng Đà Nẵng, truyền từ thế hệ này sang thế hệ khác. Các nghệ nhân địa phương sử dụng gỗ quý như gụ, lim, hương để tạo ra những sản phẩm mang đậm phong cách truyền thống Việt Nam với họa tiết chạm khắc tinh xảo và độc đáo.</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Thành phố Đà Nẵng</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>8:00 AM - 5:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/moc-khue-trung/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://www.google.com/maps?q=16.0250750,108.2122223&entry=gps&lucs=,94284511,94231188,94280568,47071704,94266209,94218641,94282134,94286869&g_ep=CAISEjI1LjQzLjEuODIxNzQwMTA2MBgAIMi8BypILDk0Mjg0NTExLDk0MjMxMTg4LDk0MjgwNTY4LDQ3MDcxNzA0LDk0MjY2MjA5LDk0MjE4NjQxLDk0MjgyMTM0LDk0Mjg2ODY5QgJWTg%3D%3D&skid=20f6dc02-ba77-4be3-8de5-7c6c9d9698ec&g_st=ipc" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 15 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://static.vinwonders.com/2022/04/lang-da-my-nghe-non-nuoc-3.jpg" alt="Stone Sculpture Village">
+                            <div class="village-badge">điêu khắc đá</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng đá Non Nước</h3>
+                            <p>Làng điêu khắc đá Non Nước nổi tiếng với các tác phẩm điêu khắc tinh xảo từ đá Marble. Kỹ thuật truyền thống được truyền lại qua nhiều thế hệ, tạo nên những tác phẩm nghệ thuật độc đáo.</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Gần Danh thắng Ngũ Hành Sơn</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>8:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/lang-nghe-da-non-nuoc/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://maps.app.goo.gl/oYjw6vkKsmnbuqEt6" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 16 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://statics.vinwonders.com/lang-chieu-ban-thach-thumb_1633430673.jpg" alt="Fan Making Village">
+                            <div class="village-badge">Chiếu Bàn Thạch</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng chiếu Bàn Thạch</h3>
+                            <p>Làng chiếu Bàn Thạch nổi tiếng với các sản phẩm chiếu truyền thống. Người dân nơi đây giữ gìn và phát huy những kỹ thuật thủ công truyền thống trong việc làm chiếu, tạo nên những chiếc chiếu tinh xảo và bền bỉ.</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Làng chiếu Bàn Thạch, xã Cẩm Hà, thành phố Hội An, tỉnh Quảng Nam.</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>8:00 AM - 5:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/lang-chieu-ban-thach/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://maps.app.goo.gl/9hxxm86fVUJ8iimv7?g_st=iz" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 17 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://cungdi.net/uploads/travel/quang_nam/hoi_an/lang-rau-tra-que-002.jpg" alt="Làng rau Trà Quế">
+                            <div class="village-badge">Rau Trà Quế</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng rau Trà Quế</h3>
+                            <p>Làng Trà Quế nổi tiếng với việc trồng rau. Người dân nơi đây giữ gìn những kỹ thuật truyền thống trong việc trồng và chăm sóc, tạo nên những loại rau đặc trưng của vùng.</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Làng rau thuộc làng Trà Quế, xã Cẩm Hà, thành phố Hội An, tỉnh Quảng Nam.</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>6:00 AM - 4:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/lang-rau-tra-que/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://maps.app.goo.gl/rHyEwuJHhYFrTqa96?g_st=iz" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 18 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://static.vinwonders.com/2022/09/lang-duc-dong-phuoc-kieu-1.jpg" alt="Mat Weaving Village">
+                            <div class="village-badge">Đúc đồng</div>
+                        </div>
+                        <div class="village-content">
+                           <h3>Làng đúc đồng Phước Kiều</h3>
+                            <p>Làng Phước Kiều nổi tiếng với nghề đúc đồng truyền thống. Người dân nơi đây sử dụng kỹ thuật thủ công để tạo ra những món đồ bằng đồng tinh xảo, mang đậm bản sắc văn hóa địa phương.</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>phường Điện Bàn, TP Đà Nẵng, cách chùa Cầu Hội An 8km</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>7:00 AM - 5:30 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/lang-duc-dong-phuoc-kieu/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://maps.app.goo.gl/BWXHD76pYezv3Zqb9?g_st=iz" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 19 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://static.vinwonders.com/2023/01/den-long-hoi-an-1.jpg" alt="Silver Jewelry Village">
+                            <div class="village-badge">Làng lồng đèn</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Làng lồng đèn Hội An</h3>
+                            <p>Làng lồng đèn Hội An nổi tiếng với nghề làm lồng đèn truyền thống. Người dân nơi đây sử dụng kỹ thuật thủ công để tạo ra những chiếc lồng đèn tinh xảo, mang đậm bản sắc văn hóa địa phương.</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Hội An</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>9:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/langlongdenhoian/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://maps.app.goo.gl/dE4tvXRoVmesYfpr8?g_st=iz" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Village 20 -->
+                    <div class="village-card">
+                        <div class="village-image">
+                            <img src="https://4.bp.blogspot.com/--RNXDWhlvwY/WZwpiU3d8eI/AAAAAAABY2k/MLySaBY_yDgwGjs-23rePEPtdc8BN40RwCLcBGAs/s1600/banhtrangdailoc-1_gpvb.jpg" alt="Calligraphy Village">
+                            <div class="village-badge">bánh tráng</div>
+                        </div>
+                        <div class="village-content">
+                            <h3>Bánh tráng Đại Lộc</h3>
+                            <p>Làng Đại Lộc nổi tiếng với nghề làm bánh tráng truyền thống. Các nghệ nhân nơi đây tạo ra những chiếc bánh tráng ngon và đẹp mắt cho các dịp đặc biệt và trang trí.</p>
+                            <div class="village-info">
+                                <div class="info-item">
+                                    <span class="icon">📍</span>
+                                    <span>Đại Lộc, Quảng Nam</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🕐</span>
+                                    <span>8:00 AM - 5:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="village-buttons">
+                                <a href="https://sites.google.com/view/banh-trang-dai-loc/trang-ch%E1%BB%A7" class="btn btn-village">Chi tiết</a>
+                                <a href="https://maps.app.goo.gl/GXXri4FSvL7HHWgY9?g_st=iz" target="_blank" class="btn btn-village">Vị trí</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Button -->
+                <div class="more-button-container">
+                    <button class="btn btn-more" id="moreBtn" onclick="toggleVillages()">
+                        <span id="moreBtnText">Xem thêm</span>
+                        <span id="moreBtnIcon">▼</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="section section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Điểm Đến Di Sản</h2>
+                <p>Khám phá sự kết nối diệu kỳ giữa kỳ quan thiên nhiên và bàn tay tài hoa của con người qua bao thế kỷ.</p>
+            </div>
+
+            <div class="locations-grid">
+                <!-- Location 1 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="https://images.vietnamtourism.gov.vn/vn/images/2022/ngu_hanh_son_da_nang_369258062.jpg" alt="Marble Mountains">
+                        <div class="location-overlay"></div>
+                        <div class="location-rating">⭐ 4.8</div>
+                    </div>
+                    <div class="location-content">
+                        <h3>Núi Ngũ Hành Sơn</h3>
+                        <p>Một cụm gồm năm ngọn đồi đá cẩm thạch và đá vôi với các thánh tích Phật giáo, hang động và tầm nhìn toàn cảnh tuyệt đẹp ra Đà Nẵng.</p>
+                        <div class="location-tags">
+                            <span class="tag">Caves & Temples</span>
+                            <span class="tag">Stone Carving</span>
+                            <span class="tag">Panoramic Views</span>
+                        </div>
+                        <div class="location-buttons">
+                            <a href="https://maps.app.goo.gl/dkG1Lcm7GktTaaxeA?g_st=iz" target="_blank" rel="noopener noreferrer" class="btn btn-primary flex-btn">
+                                <span>🧭</span>
+                                <span>Vị trí</span>
+                            </a>
+                            <button class="btn btn-icon">📷</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location 2 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="https://haycafe.vn/wp-content/uploads/2022/01/Hinh-anh-cau-Rong-dep-tuyet-voi.jpg" alt="Dragon Bridge">
+                        <div class="location-overlay"></div>
+                        <div class="location-rating">⭐ 4.9</div>
+                    </div>
+                    <div class="location-content">
+                        <h3>Cầu Rồng</h3>
+                        <p>Một biểu tượng nổi tiếng của Đà Nẵng, cây cầu này tỏa ra lửa và nước mỗi cuối tuần, tạo nên một màn trình diễn không thể quên.</p>
+                        <div class="location-tags">
+                            <span class="tag">Fire Show</span>
+                            <span class="tag">Night Views</span>
+                            <span class="tag">Architecture</span>
+                        </div>
+                        <div class="location-buttons">
+                            <a href="https://maps.app.goo.gl/uwLFk7Mi8hTmQ3kq9?g_st=iz" target="_blank" rel="noopener noreferrer" class="btn btn-primary flex-btn">
+                                <span>🧭</span>
+                                <span>Vị trí</span>
+                            </a>
+                            <button class="btn btn-icon">📷</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location 3 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="https://images.unsplash.com/photo-1643030080539-b411caf44c37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxIb2klMjBBbiUyMGFuY2llbnQlMjB0b3duJTIwVmlldG5hbXxlbnwxfHx8fDE3NzAzODMwMjZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Hội An Ancient Town">
+                        <div class="location-overlay"></div>
+                        <div class="location-rating">⭐ 5.0</div>
+                    </div>
+                    <div class="location-content">
+                        <h3>Phố cổ Hội An</h3>
+                        <p>Một di sản thế giới của UNESCO, phố cổ Hội An là một cảng thương mại cổ xưa có kiến trúc được bảo tồn tốt và nền văn hóa rực rỡ.</p>
+                        <div class="location-tags">
+                            <span class="tag">UNESCO Site</span>
+                            <span class="tag">Ancient Architecture</span>
+                            <span class="tag">Lantern Festival</span>
+                        </div>
+                        <div class="location-buttons">
+                            <a href="https://maps.app.goo.gl/URZLjR2Xe5P2zzRd6?g_st=iz" target="_blank" rel="noopener noreferrer" class="btn btn-primary flex-btn">
+                                <span>🧭</span>
+                                <span>Vị trí</span>
+                            </a>
+                            <button class="btn btn-icon">📷</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="about" class="section section-gradient">
+        <div class="container">
+            <div class="section-header">
+                <h2>Khởi đầu hành trình</h2>
+                <p>Những chuẩn bị nhỏ cho một chuyến đi lớn lao về miền ký ức.</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">✈️</div>
+                    <h3>Vạn Dặm Tương Phùng</h3>
+                    <p>Đà Nẵng chào đón bạn bằng những chuyến bay vươn mình qua biển lớn hay những cung đường ven biển thơ mộng. Dù bạn đến từ đâu, đây là điểm giao thoa giữa hiện đại và những giá trị xưa cũ đang chờ được đánh thức.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">📅</div>
+                    <h3>Mùa Di Sản Thăng Hoa</h3>
+                    <p>Từ tháng 2 đến tháng 5, khi nắng vàng rót mật lên những phiến đá Non Nước và gió biển thổi nhẹ qua phố đèn lồng, đó là lúc những làng nghề rạng rỡ nhất. Hãy chọn lúc nắng trong để thấy rõ từng đường chạm trổ tài hoa.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <h3>Nhịp Bước Thong Dong</h3>
+                    <p>Hãy chọn một chiếc xe máy nhỏ để len lỏi vào từng xóm nghề, hay thong dong đi bộ trên những con đường lát gạch cổ. Di sản không dành cho sự vội vã; hãy đi chậm để lắng nghe âm vang của đá và mùi thơm của tre lụa.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">ℹ️</div>
+                    <h3>Gói Trọn Nghĩa Tình</h3>
+                    <p>Một nụ cười thân thiện hay một vài câu chào hỏi bản địa sẽ mở ra những câu chuyện nghề chưa bao giờ được kể. Hãy trân trọng từng sản phẩm thủ công, bởi bạn đang cầm trên tay cả cuộc đời và tâm huyết của một nghệ nhân.</p>
+                </div>
+            </div>
+
+            <div class="about-content">    
+            <h3 class="hp-aptima-bi">ĐÀ NẴNG –  NHỮNG CUNG TRẦM DI SẢN GIỮA NHỊP SỐNG ĐƯƠNG ĐẠI</h3>
+
+                <p>Giữa nhịp sống phố thị xô bồ, Đà Nẵng vẫn lặng lẽ gìn giữ những khoảng lặng đầy mê hoặc – nơi thời gian ngưng đọng trong từng thớ đá Non Nước vĩnh cửu, sợi chiếu Cẩm Nê thủy chung hay nét bánh tráng Túy Loan nồng nàn vị đất. Đây không chỉ là những nơi sản xuất, mà là những "bảo tàng sống" lưu giữ hồn cốt xứ Quảng, nơi di sản không nằm trên trang sách mà hồi sinh sinh động qua từng nhịp đập của bàn tay tài hoa và trái tim người nghệ nhân.</p>
+                <p>Bước vào hành trình này, bạn sẽ được chiêm ngưỡng vũ điệu huyền ảo của những chiếc lồng đèn Hội An thắp sáng niềm hy vọng, và cảm nhận sự giao thoa tuyệt mỹ giữa truyền thống cùng nhịp thở đương đại. Hãy cùng chúng tôi bước chậm lại để lắng nghe âm vang của đá, ngắm nhìn sắc lụa rực rỡ và chạm vào những giá trị nguyên bản đang tỏa sáng giữa lòng miền di sản.</p>
+                <p>Chào mừng bạn đến với hành trình tìm về những giá trị nguyên bản – Hành trình của những đôi tay dệt nên huyền thoại giữa miền di sản.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Di sản Đà Nẵng</h3>
+                    <p>Khám phá di sản văn hóa và các làng nghề truyền thống của Đà Nẵng, Việt Nam.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#villages">Làng nghề</a></li>
+                        <li><a href="#locations">Điểm đến</a></li>
+                        <li><a href="#about">Cẩm nang</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <li>✉️ ta.all.diamond810@gmail.com</li>
+                        <li>📞 +84 076 658 8773</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Mạng xã hội</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Di sản Đà Nẵng. </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const navMobile = document.getElementById('navMobile');
+        const menuIcon = document.getElementById('menuIcon');
+
+        menuBtn.addEventListener('click', function() {
+            navMobile.classList.toggle('active');
+            menuIcon.textContent = navMobile.classList.contains('active') ? '✕' : '☰';
+        });
+
+        function closeMenu() {
+            navMobile.classList.remove('active');
+            menuIcon.textContent = '☰';
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 64;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Toggle additional villages
+        function toggleVillages() {
+    const moreVillages = document.getElementById('moreVillages');
+    const moreBtnText = document.getElementById('moreBtnText');
+    const moreBtnIcon = document.getElementById('moreBtnIcon');
+
+    if (moreVillages.classList.contains('hidden')) {
+        // Expand
+        moreVillages.classList.remove('hidden');
+        moreBtnText.textContent = 'Thu gọn';
+        moreBtnIcon.textContent = '▲';
+        
+        // Optional: Smooth scroll to the start of the new content
+        moreVillages.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+        // Collapse
+        moreVillages.classList.add('hidden');
+        moreBtnText.textContent = 'Xem thêm';
+        moreBtnIcon.textContent = '▼';
+        
+        // Scroll back up to the main section
+        document.getElementById('villages').scrollIntoView({ behavior: 'smooth' });
+    }
+}
+    </script>
+</body>
+</html>
